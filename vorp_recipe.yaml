@@ -6,7 +6,7 @@ author: vorpcore
 description: VorpCore Official txAdmin recipe! This will set up a base vorp official server.
 
 variables:
-    steam_webApiKey: "none"
+    steam_webApiKey: "03B44FD218F822983A017C510CC6466D"
 
 tasks:
 # Recipe Specific server.cfg files
@@ -20,9 +20,9 @@ tasks:
     dest: ./server.cfg
   
 # Run Database SQL
-  - action: connect_database
-  - action: query_database
-    file: ./temp/vorp_txAdminRecipe/MariaDB.sql
+  #- action: connect_database
+  #- action: query_database
+    #file: ./temp/vorp_txAdminRecipe/MariaDB.sql
     
 # Download default CFX resources
   - action: download_github

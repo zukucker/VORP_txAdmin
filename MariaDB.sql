@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `characters` (
   KEY `compPlayer` (`compPlayer`(768)),
   KEY `info` (`info`(768)),
   KEY `inventory` (`inventory`(768)),
-  KEY `coords` (`coords`),
+  KEY `coords` (`coords`(768)),
   KEY `money` (`money`),
   KEY `meta` (`meta`),
   KEY `steamname` (`steamname`),
